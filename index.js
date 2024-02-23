@@ -9,9 +9,9 @@ function sendMail() {
     const templateID = "template_0zimvb9";
        
     emailjs
-        alert ("your message sent successfully");
         .send(serviceID, templateID, params)
         .then((res) => {
+            setTimeout(() => alert("your message sent successfully"), 1000); // Delaying alert as a test
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document. getElementById("message").value = "";

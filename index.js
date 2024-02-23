@@ -1,6 +1,4 @@
-function sendMail(event) {
-    event.preventDefault(); // Prevents the form from submitting traditionally
-    
+function sendMail() {
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,

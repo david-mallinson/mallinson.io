@@ -11,11 +11,11 @@ function sendMail() {
     emailjs
         .send(serviceID, templateID, params)
         .then((res) => {
-            setTimeout(() => alert("your message sent successfully"), 1000); // Delaying alert as a test
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
             document. getElementById("message").value = "";
             console.log(res);
+            alert ("your message sent successfully");
         })
         .catch((err) => console.log(err));
 }
